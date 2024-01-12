@@ -1,0 +1,59 @@
+❤️FEATURES:
+
+1) account creation,share post,create post 
+
+2) JWT TOKEN HANDLING
+
+3) login/signup 
+
+4) homepage pe followers will be shown 
+
+5) some post not have replies show boring emoji ,which have show pic of person who commneted
+
+6) like/unlike post
+
+7) comment on post(i.e reply on post)
+
+8) if i unfollow a person then we will not see its post
+
+9) dark/light mode
+
+10) profile page pe delete icon of out post(to delete  post)
+
+11) update profile
+
+12) create a post feature and image can be chosen from local folder
+
+13) logut feature
+
+14) responsive
+
+15) technolgies : react with vite , chakra ui
+
+⭐
+
+1) npm create vite@latest . , choose react with js 
+2) npm install 
+3) npm run dev
+
+✔️ using chakra ui download as npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+✔️paste in main.jsx <ChakraProvider> and wap app component inside it and we can use its all componets
+
+✔️pass theme inide chakra provider to use it in our app
+
+✔️Chakra UI comes with built-in support for managing color mode in your apps.
+
+✔️ By default, most of Chakra's components are dark mode compatible. In some scenarios, you might need to make your component respond to color mode.
+
+✔️paste it above the app component 
+ <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+
+-> for routing install react-router-dom
+
+🔥  Wrap everything inside container so that we remain in center
+so import container from charkra ui and wrap everthing inside container i.e inside app.jsx
+
+ </BrowserRouter> is used to access components coming from reaact-router-dom
+
+❤️ MAIN.JSX : chakra ui setup  and browser router used here 

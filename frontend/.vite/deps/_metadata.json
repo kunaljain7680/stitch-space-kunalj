@@ -1,0 +1,98 @@
+{
+  "hash": "8a8a2268",
+  "browserHash": "e879432c",
+  "optimized": {
+    "@chakra-ui/menu": {
+      "src": "../../node_modules/@chakra-ui/menu/dist/index.mjs",
+      "file": "@chakra-ui_menu.js",
+      "fileHash": "19ac314b",
+      "needsInterop": false
+    },
+    "@chakra-ui/portal": {
+      "src": "../../node_modules/@chakra-ui/portal/dist/index.mjs",
+      "file": "@chakra-ui_portal.js",
+      "fileHash": "f8c71560",
+      "needsInterop": false
+    },
+    "@chakra-ui/react": {
+      "src": "../../node_modules/@chakra-ui/react/dist/index.mjs",
+      "file": "@chakra-ui_react.js",
+      "fileHash": "418bdf2b",
+      "needsInterop": false
+    },
+    "@chakra-ui/theme-tools": {
+      "src": "../../node_modules/@chakra-ui/theme-tools/dist/index.mjs",
+      "file": "@chakra-ui_theme-tools.js",
+      "fileHash": "3eb95999",
+      "needsInterop": false
+    },
+    "@chakra-ui/toast": {
+      "src": "../../node_modules/@chakra-ui/toast/dist/index.mjs",
+      "file": "@chakra-ui_toast.js",
+      "fileHash": "b1878a5f",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "8aedc8b6",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "59b17474",
+      "needsInterop": true
+    },
+    "react-icons/bs": {
+      "src": "../../node_modules/react-icons/bs/index.esm.js",
+      "file": "react-icons_bs.js",
+      "fileHash": "12b7e23d",
+      "needsInterop": false
+    },
+    "react-icons/cg": {
+      "src": "../../node_modules/react-icons/cg/index.esm.js",
+      "file": "react-icons_cg.js",
+      "fileHash": "0b264010",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "d5cdc36c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-IQXTS5WO": {
+      "file": "chunk-IQXTS5WO.js"
+    },
+    "chunk-WDPDMBPI": {
+      "file": "chunk-WDPDMBPI.js"
+    },
+    "chunk-HB6CQ34D": {
+      "file": "chunk-HB6CQ34D.js"
+    },
+    "chunk-2HKBA6KI": {
+      "file": "chunk-2HKBA6KI.js"
+    },
+    "chunk-X2SSOQUE": {
+      "file": "chunk-X2SSOQUE.js"
+    },
+    "chunk-XXZV7QFX": {
+      "file": "chunk-XXZV7QFX.js"
+    },
+    "chunk-BHDLHQY3": {
+      "file": "chunk-BHDLHQY3.js"
+    },
+    "chunk-FBRNPY62": {
+      "file": "chunk-FBRNPY62.js"
+    },
+    "chunk-UM3JHGVO": {
+      "file": "chunk-UM3JHGVO.js"
+    },
+    "chunk-CEQRFMJQ": {
+      "file": "chunk-CEQRFMJQ.js"
+    }
+  }
+}
