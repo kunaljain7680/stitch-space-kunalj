@@ -22,6 +22,7 @@ import { useSetRecoilState } from "recoil";
 import authScreenAtom from "../atoms/authAtom";
 import useShowToast from "../hooks/useShowToast";
 import userAtom from "../atoms/userAtom";
+import axios from "axios";
 
 export default function SignupCard() {
 	const [showPassword, setShowPassword] = useState(false);
@@ -47,7 +48,7 @@ export default function SignupCard() {
 // The headers specify that the content type of the request body is JSON.
 // The body is the data that will be sent with the request. It's the JSON-serialized string of the inputs object.
 
-			const data = await axios.post('/api/users/signup', inputs, {
+			const data = await axios.post('http://localhost:5000//api/users/signup', inputs, {
 			    headers: {
 			      'Content-Type': 'application/json',
 			    },

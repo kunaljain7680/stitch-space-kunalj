@@ -35,7 +35,7 @@ const UserPage = () => {
     const getPosts=async()=>{
 
       try {
-        const res=await axios.get(`/api/posts/user/${username}`);
+        const res=await axios.get(`http://localhost:5000/api/posts/user/${username}`);
 
         const data=await res.json();
         console.log(data);

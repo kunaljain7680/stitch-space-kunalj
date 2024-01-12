@@ -36,7 +36,7 @@ const Post = ({post,postedBy}) => {
     const getUser=async()=>{
 
       try{
-        const data=await axios.get("/api/users/profile/"+postedBy);
+        const data=await axios.get("http://localhost:5000//api/users/profile/"+postedBy);
         // const data=await res.json();
         // console.log(data);
 
@@ -66,7 +66,7 @@ const Post = ({post,postedBy}) => {
 
       if(!window.confirm("Are you sure you want to delete this post?"))return;
 
-      const data = await axios.delete(`/api/posts/${post._id}`);
+      const data = await axios.delete(`http://localhost:5000//api/posts/${post._id}`);
 
       if(data.error){
         showToast("Error",data.error,"error");

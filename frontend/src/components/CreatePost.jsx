@@ -9,6 +9,7 @@ import useShowToast from '../hooks/useShowToast';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import postsAtom from '../atoms/postsAtom';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 const MAX_CHAR=500;
 
@@ -60,7 +61,7 @@ const CreatePost = () => {
     setLoading(true);
 
     try {
-      const data = await axios.post('/api/posts/create', {
+      const data = await axios.post('http://localhost:5000//api/posts/create', {
         postedBy: user._id,
         text: postText,
         img: imgUrl,

@@ -5,6 +5,7 @@ import userAtom from '../atoms/userAtom'
 import useShowToast from '../hooks/useShowToast'
 import {FiLogOut} from "react-icons/fi"
 import { useRouter } from 'next/router';
+import axios from 'axios'
 
 const LogoutButton = () => {
 
@@ -16,7 +17,7 @@ const LogoutButton = () => {
             
             // fetch (see endpoints in backend k andar userRoutes)
             
-            const data = await axios.post('/api/users/logout', null, {
+            const data = await axios.post('http://localhost:5000//api/users/logout', null, {
                 headers: {
                   'Content-Type': 'application/json',
                 },

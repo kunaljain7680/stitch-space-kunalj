@@ -62,7 +62,7 @@ const PostPage = () => {
 
       if(!window.confirm("Are you sure you want to delete this post?"))return;
 
-      const res=await axios.delete(`/api/posts/${currentPost._id}`);
+      const res=await axios.delete(`http://localhost:5000/api/posts/${currentPost._id}`);
 
       const data=res.json();
 

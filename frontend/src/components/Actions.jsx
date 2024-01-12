@@ -4,6 +4,7 @@ import userAtom from "../atoms/userAtom"
 import { useRecoilState, useRecoilValue } from 'recoil';
 import useShowToast from '../hooks/useShowToast';
 import postsAtom from '../atoms/postsAtom';
+import axios from 'axios';
 
 const Actions = ({ post}) => {
 
@@ -36,7 +37,7 @@ const Actions = ({ post}) => {
 		setIsLiking(true);
 
 		try {
-			const data = await axios.put(`/api/posts/like/${post._id}`, null, {
+			const data = await axios.put(`http://localhost:5000/api/posts/like/${post._id}`, null, {
 				headers: {
 				  'Content-Type': 'application/json',
 				},
@@ -114,7 +115,7 @@ const Actions = ({ post}) => {
 
 		try {
 			
-			const data = await axios.put(`/api/posts/reply/${post._id}`, { text: reply }, {
+			const data = await axios.put(`http://localhost:5000/api/posts/reply/${post._id}`, { text: reply }, {
 				headers: {
 				  'Content-Type': 'application/json',
 				},

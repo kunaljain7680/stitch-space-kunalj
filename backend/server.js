@@ -11,6 +11,7 @@ import cookieParser from "cookie-parser";
 import userRoutes from "./routes/userRoutes.js";
 import postRoutes from "./routes/postRoutes.js";
 import {v2 as cloudinary} from "cloudinary";
+import cors from "cors"
 
 dotenv.config();  // take port from .env file
 
@@ -20,7 +21,7 @@ const app=express();
 
 const PORT=process.env.PORT || 5000;
 
-const cors = require("cors");
+// const cors = require("cors");
 
 // cloudinary config
 

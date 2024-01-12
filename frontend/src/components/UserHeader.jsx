@@ -11,6 +11,7 @@ import userAtom from '../atoms/userAtom';
 import { Button } from '@chakra-ui/react';
 import { Link as RouterLink} from 'react-router-dom';  // imported from here not from chakra ui as then it is refreshing not single page application 
 import useShowToast from '../hooks/useShowToast';
+import axios from 'axios';
 
 const UserHeader = ({user}) => {  // this is the user we are looking into its profile
     console.log(user);
@@ -63,7 +64,7 @@ const UserHeader = ({user}) => {  // this is the user we are looking into its pr
         setUpdating(true);
 
         try {
-            const data = await axios.post(`/api/users/follow/${user._id}`, null, {
+            const data = await axios.post(`http://localhost:5000//api/users/follow/${user._id}`, null, {
                 headers: {
                   'Content-Type': 'application/json',
                 },

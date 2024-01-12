@@ -19,6 +19,7 @@ import { useSetRecoilState } from "recoil";
 import authScreenAtom from "../atoms/authAtom";
 import useShowToast from "../hooks/useShowToast";
 import userAtom from "../atoms/userAtom";
+import axios from "axios";
 
 export default function LoginCard() {
 	const [showPassword, setShowPassword] = useState(false);
@@ -40,7 +41,7 @@ export default function LoginCard() {
 		try {
 
 			// ye frontend kp backend se connect karne k lie use fetch request and inorder to send fetch request add proxy
-			const data = await axios.post('/api/users/login', inputs, {
+			const data = await axios.post('http://localhost:5000//api/users/login', inputs, {
 				headers: {
 				  'Content-Type': 'application/json',
 				},
